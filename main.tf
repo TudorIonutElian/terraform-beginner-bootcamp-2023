@@ -1,4 +1,11 @@
 terraform {
+  cloud {
+    organization = "IonutElianTudorOrganization"
+
+    workspaces {
+      name = "terraform-bootcamp-2023"
+    }
+  }
   required_providers {
     random = {
       source = "hashicorp/random"
