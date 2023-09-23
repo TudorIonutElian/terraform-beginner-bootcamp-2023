@@ -152,3 +152,8 @@ resource "aws_s3_bucket" "terraform_course_bucket" {
     }
   }
 ```
+
+==================================================
+### Set your TERRAFORM_CLOUD_TOKEN
+==================================================
+`gp env TERRAFORM_CLOUD_TOKEN='your-token-here'`
