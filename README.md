@@ -112,8 +112,9 @@ We need to be careful when using the Init because it will not rerun if we restar
 https://www.gitpod.io/docs/configure/workspaces/tasks
 
 
-
-#### Adding terraform provider
+==================================================
+### Adding terraform provider
+==================================================
 ```terraform
     aws = {
       source = "hashicorp/aws"
@@ -121,16 +122,33 @@ https://www.gitpod.io/docs/configure/workspaces/tasks
     }
 ```
 
-#### Configuring terraform provider
+==================================================
+### Configuring terraform provider
+==================================================
 ```terraform
 provider "aws" {
 
 }
 ```
 
-#### Create S3 Bucket resource in terraform
+==================================================
+### Create S3 Bucket resource in terraform
+==================================================
 ```
 resource "aws_s3_bucket" "terraform_course_bucket" {
   bucket = random_string.bucket_name.result
 }
+```
+
+==================================================
+### Add terraform cloud in terraform block
+==================================================
+```
+  cloud {
+    organization = "Your organization"
+
+    workspaces {
+      name = "your-workspace"
+    }
+  }
 ```
