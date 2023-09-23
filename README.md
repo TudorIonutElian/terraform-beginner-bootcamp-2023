@@ -110,3 +110,27 @@ https://en.wikipedia.org/wiki/Chmod
 We need to be careful when using the Init because it will not rerun if we restart an existing workspace.
 
 https://www.gitpod.io/docs/configure/workspaces/tasks
+
+
+
+#### Adding terraform provider
+```terraform
+    aws = {
+      source = "hashicorp/aws"
+      version = "5.16.2"
+    }
+```
+
+#### Configuring terraform provider
+```terraform
+provider "aws" {
+
+}
+```
+
+#### Create S3 Bucket resource in terraform
+```
+resource "aws_s3_bucket" "terraform_course_bucket" {
+  bucket = random_string.bucket_name.result
+}
+```
