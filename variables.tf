@@ -7,4 +7,5 @@ variable "user_uuid" {
 variable "bucket_name" {
   description = "The name of the S3 bucket"
   type        = string
+  //default     = "zxdsstpbibd86fj1p5fpvlha9k7p8zrr"
 }
