@@ -21,3 +21,4 @@ sudo apt update
 sudo apt-get install terraform -y
 
 cd $PROJECT_ROOT
+echo "Terraform CLI was installed."
