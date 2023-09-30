@@ -9,3 +9,13 @@ variable "bucket_name" {
   type        = string
   //default     = "zxdsstpbibd86fj1p5fpvlha9k7p8zrr"
 }
+
+# Declare variable for index_html_filepath
+variable "index_html_filepath" {
+  type = string
+}
+
+# Declare variable for error_html_filepath
+variable "error_html_filepath" {
+  type = string
+}
