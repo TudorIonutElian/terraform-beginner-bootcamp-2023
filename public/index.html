@@ -2,9 +2,31 @@
 <html>
 <head>
     <title>Index - Tudor Ionut Elian S3</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #images {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #images img {
+            max-width: 400px;
+            margin: 20px;
+        }
+        
+    </style>
 </head>
 <body>
-    <h1>Index - Tudor Ionut Elian S3</h1>
-    <h2>Index - I should see no change here because I did not incremented content_version.</h2>
+    <h1>Bucharest Images</h1>
+    <div id="images">
+        <img src="/assets/bucharest_1.jpg" alt="" srcset="">
+        <img src="/assets/bucharest_2.jpg" alt="" srcset="">
+        <img src="/assets/bucharest_2.jpg" alt="" srcset="">
+    </div>
 </body>
 </html>
