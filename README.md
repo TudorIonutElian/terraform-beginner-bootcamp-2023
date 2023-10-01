@@ -1,6 +1,9 @@
 # Terraform Beginner Bootcamp 2023
 
 ## Versions
+> 1.1.0
+ - added piece of code to copy tfvars.example into tfvars
+ 
 > 0.9.0
  - added bin/set_tf_alias script to set alias for tf usage
  - changed .gitpod.yml to run bin/set_tf_alias script file
