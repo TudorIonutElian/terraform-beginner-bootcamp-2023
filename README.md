@@ -1,15 +1,20 @@
 # Terraform Beginner Bootcamp 2023
 
 ## Versions
+> 0.9.0
+ - added bin/set_tf_alias script to set alias for tf usage
+ - changed .gitpod.yml to run bin/set_tf_alias script file
+
+> 0.8.0
+ - updated token for using into cloud state saver
+
+> 0.7.0
+ - added cloud backend for terraform state keeper
 
 > 0.6.0
->> Added readme.md file
+ - added aws_s3_bucket resource to be created
 
-> 0.5.0
->> Added .env.example file
-
-
-> 0.4.0
+> 0.4.0 + 0.5.0
 1. Updated .gitpod.yml file in order to install terraform properly
 2. Updated .terraform.lock.hcl file after apply and destroy steps
 3. Added main.tf file
