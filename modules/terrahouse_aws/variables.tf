@@ -22,6 +22,7 @@ variable "bucket_name" {
   }
 }
 
+# Declare index_html_filepath receiving variable
 variable "index_html_filepath" {
   description = "The file path for index.html"
   type        = string
@@ -32,6 +33,7 @@ variable "index_html_filepath" {
   }
 }
 
+# Declare error_html_filepath receiving variable
 variable "error_html_filepath" {
   description = "The file path for error.html"
   type        = string
@@ -42,6 +44,7 @@ variable "error_html_filepath" {
   }
 }
 
+# Declare content_version receiving variable
 variable "content_version" {
   description = "The content version. Should be a positive integer starting at 1."
   type        = number
@@ -50,4 +53,10 @@ variable "content_version" {
     condition     = var.content_version > 0 && floor(var.content_version) == var.content_version
     error_message = "The content_version must be a positive integer starting at 1."
   }
+}
+
+# Declare assets_path receiving variable
+variable "assets_path" {
+  description = "Path to assets folder"
+  type = string
 }
