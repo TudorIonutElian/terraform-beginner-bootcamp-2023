@@ -19,3 +19,8 @@ variable "index_html_filepath" {
 variable "error_html_filepath" {
   type = string
 }
+
+# Declare variable for content version
+variable "content_version" {
+  type        = number
+}
