@@ -1,9 +1,16 @@
 # Terraform Beginner Bootcamp 2023
 
 ## Versions
+> 1.2.0
+ - updated bucket name as resource from example to website_bucket
+ - updated outputs that were default to bucket_name 
+ - removed random provider
+ - added bucket name and bucket name validator for this variable
+
+
 > 1.1.0
  - added piece of code to copy tfvars.example into tfvars
- 
+
 > 0.9.0
  - added bin/set_tf_alias script to set alias for tf usage
  - changed .gitpod.yml to run bin/set_tf_alias script file
