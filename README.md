@@ -16,6 +16,7 @@
    - configured terraform block
    - configured random provider
    - added **resource** random_string 
+   - added output form random string which will be bucket name
 
 > 0.3.0
 1. Added / updated bin/install_terraform_cli file
