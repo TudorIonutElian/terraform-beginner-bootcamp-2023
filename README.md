@@ -1,11 +1,13 @@
 # Terraform Beginner Bootcamp 2023
 
 ## Versions
+> 2.3.0
+ - updated terraform-provider-terratowns/go.mod (WIP)
+
 > 2.2.0
  - added TF_LOG to env
  - updated some paths to bin/build_provider script
  - added terratowns provider into main.tf
- - 
 
 > 2.1.0
  - updated .gitignore file
