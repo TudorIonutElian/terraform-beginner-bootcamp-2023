@@ -23,25 +23,9 @@ variable "user_uuid" {
 #}
 
 # Declare index_html_filepath receiving variable
-variable "index_html_filepath" {
-  description = "The file path for index.html"
+variable "public_path" {
+  description = "The file path for the public directory"
   type        = string
-
-  validation {
-    condition     = fileexists(var.index_html_filepath)
-    error_message = "The provided path for index.html does not exist."
-  }
-}
-
-# Declare error_html_filepath receiving variable
-variable "error_html_filepath" {
-  description = "The file path for error.html"
-  type        = string
-
-  validation {
-    condition     = fileexists(var.error_html_filepath)
-    error_message = "The provided path for error.html does not exist."
-  }
 }
 
 # Declare content_version receiving variable
@@ -53,10 +37,4 @@ variable "content_version" {
     condition     = var.content_version > 0 && floor(var.content_version) == var.content_version
     error_message = "The content_version must be a positive integer starting at 1."
   }
-}
-
-# Declare assets_path receiving variable
-variable "assets_path" {
-  description = "Path to assets folder"
-  type = string
 }

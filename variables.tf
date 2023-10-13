@@ -42,3 +42,17 @@ variable "terratowns_access_token" {
 variable "teacherseat_user_uuid" {
  type = string
 }
+
+variable "farming_simulator" {
+  type = object({
+    public_path = string
+    content_version = number
+  })
+}
+
+variable "bucharest_travel" {
+  type = object({
+    public_path = string
+    content_version = number
+  })
+}
