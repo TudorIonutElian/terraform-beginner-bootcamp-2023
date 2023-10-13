@@ -1,6 +1,21 @@
 # Terraform Beginner Bootcamp 2023
 
 ## Versions
+> 1.5.0
+ - using of aws_caller_identity
+ - added cloudfront distribution
+ - added s3 bucket_policy
+
+> 1.4.0
+ - added path for files into variables
+ - added bucket configuration
+ - added endpoint outputs
+
+> 1.3.0
+ - added terrahouse_aws module
+ - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket
+ - https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html?icmpid=docs_amazons3_console
+
 > 1.2.0
  - updated bucket name as resource from example to website_bucket
  - updated outputs that were default to bucket_name 
