@@ -1,6 +1,11 @@
 # Terraform Beginner Bootcamp 2023
 
 ## Versions
+> 2.1.0
+ - updated .gitignore file
+ - set build_provider script
+ - added terraformrc file
+
 > 2.0.0
  - added instructions to move into project root for each terminal and task
  - added sinatra mock server task
