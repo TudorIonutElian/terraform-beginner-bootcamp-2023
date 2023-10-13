@@ -7,3 +7,11 @@ error_html_filepath="/workspace/terraform-beginner-bootcamp-2023/public/error.ht
 assets_path="/workspace/terraform-beginner-bootcamp-2023/public/assets"
 terratowns_access_token="add_your_token_here"
 terratowns_endpoint="https://terratowns.cloud/api"
+arcanum = {
+  public_path = "/workspace/terraform-beginner-bootcamp-2023/public/arcanum"
+  content_version = 2 
+}
+bucharest_travel = {
+  public_path = "/workspace/terraform-beginner-bootcamp-2023/public/bucharest_travel"
+  content_version = 1 
+}
