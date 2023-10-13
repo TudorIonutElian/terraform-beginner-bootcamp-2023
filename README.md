@@ -1,6 +1,11 @@
 # Terraform Beginner Bootcamp 2023
 
 ## Versions
+> 1.6.0
+ - added content version to terrahouse_aws
+ - added trigger to replace terrahouse_aws
+ - added public directory for resources (html, images, etc)
+
 > 1.5.2
  - added outputs from scripts
 
