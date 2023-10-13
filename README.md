@@ -1,6 +1,9 @@
 # Terraform Beginner Bootcamp 2023
 
 ## Versions
+> 1.8.1
+ - added some extensions to be forced when gitpod starts
+
 > 1.8.0
  - added http server
  - uptdated assets path variable
