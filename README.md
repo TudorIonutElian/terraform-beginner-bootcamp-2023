@@ -1,6 +1,12 @@
 # Terraform Beginner Bootcamp 2023
 
 ## Versions
+> 1.8.0
+ - added http server
+ - uptdated assets path variable
+ - updated assets to be uploaded with for_each
+ - added new image resources
+
 > 1.7.0
  - added outputs for cloudfront_url
  - added invalidator trigger
