@@ -1,6 +1,13 @@
 # Terraform Beginner Bootcamp 2023
 
 ## Versions
+> 2.6.0
+ - back to cloud state keeper
+ - added 2 modules with 2 houses
+ - set public paths into variables
+ - updated some image resources
+ - ready to submit
+
 > 2.5.0
  - updated bucket resources to be dynamic every time (not needed but why not)
  - moved some hardcoded values into variables and example file also
