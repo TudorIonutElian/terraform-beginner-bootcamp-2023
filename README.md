@@ -2,6 +2,10 @@
 
 ## Versions
 > 2.3.0
+ - (WIP) updated terraform-provider-terratowns endpoint
+ - added first home terratowns_home
+
+> 2.3.0
  - updated terraform-provider-terratowns/go.mod (WIP)
 
 > 2.2.0
