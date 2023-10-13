@@ -1,6 +1,11 @@
 # Terraform Beginner Bootcamp 2023
 
 ## Versions
+> 1.7.0
+ - added outputs for cloudfront_url
+ - added invalidator trigger
+ - expose cloudfront_url domain
+
 > 1.6.0
  - added content version to terrahouse_aws
  - added trigger to replace terrahouse_aws
