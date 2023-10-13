@@ -1,7 +1,11 @@
 # Terraform Beginner Bootcamp 2023
 
 ## Versions
-> 2.3.0
+> 2.5.0
+ - updated bucket resources to be dynamic every time (not needed but why not)
+ - moved some hardcoded values into variables and example file also
+
+> 2.4.0
  - (WIP) updated terraform-provider-terratowns endpoint
  - added first home terratowns_home
 
