@@ -1,6 +1,12 @@
 # Terraform Beginner Bootcamp 2023
 
 ## Versions
+> 1.5.2
+ - added outputs from scripts
+
+> 1.5.1
+ - moved CP tfvars example to be copied from a script
+
 > 1.5.0
  - using of aws_caller_identity
  - added cloudfront distribution
