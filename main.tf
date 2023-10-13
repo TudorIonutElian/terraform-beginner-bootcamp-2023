@@ -47,7 +47,7 @@ appealing to both dedicated fans of the series and newcomers looking to explore 
 DESCRIPTION
   #domain_name = module.terrahouse_aws.cloudfront_url
   domain_name = module.farming_simulator_hosting.domain_name
-  town = "video-valley"
+  town = "gamers-grotto"
   content_version = var.farming_simulator.content_version
 }
 
