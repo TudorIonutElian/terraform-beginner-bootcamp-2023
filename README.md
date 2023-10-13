@@ -1,41 +1,177 @@
 # Terraform Beginner Bootcamp 2023
 
-==================================================
-## Semantic Versioning :mage:
-==================================================
+## Versions
+> 2.6.0
+ - back to cloud state keeper
+ - added 2 modules with 2 houses
+ - set public paths into variables
+ - updated some image resources
+ - ready to submit
 
-This project is going utilize semantic versioning for its tagging.
-[semver.org](https://semver.org/)
+> 2.5.0
+ - updated bucket resources to be dynamic every time (not needed but why not)
+ - moved some hardcoded values into variables and example file also
 
-The general format:
+> 2.4.0
+ - (WIP) updated terraform-provider-terratowns endpoint
+ - added first home terratowns_home
 
- **MAJOR.MINOR.PATCH**, eg. `1.0.1`
+> 2.3.0
+ - updated terraform-provider-terratowns/go.mod (WIP)
 
-- **MAJOR** version when you make incompatible API changes
-- **MINOR** version when you add functionality in a backward compatible manner
-- **PATCH** version when you make backward compatible bug fixes
+> 2.2.0
+ - added TF_LOG to env
+ - updated some paths to bin/build_provider script
+ - added terratowns provider into main.tf
 
-## Install the Terraform CLI
+> 2.1.0
+ - updated .gitignore file
+ - set build_provider script
+ - added terraformrc file
 
-### Considerations with the Terraform CLI changes
-The Terraform CLI installation instructions have changed due to gpg keyring changes. So we needed refer to the latest install CLI instructions via Terraform Documentation and change the scripting for install.
+> 2.0.0
+ - added instructions to move into project root for each terminal and task
+ - added sinatra mock server task
+ - added scripts to create, update, read delete (CRUD)
+ - added LICENSE
 
-[Install Terraform CLI](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 
-==================================================
-### Considerations for Linux Distribution
-==================================================
+> 1.8.2
+ - added another extensions to be forced when gitpod starts
 
-This project is built against Ubunutu.
-Please consider checking your Linux Distrubtion and change accordingly to distrubtion needs. 
+> 1.8.1
+ - added some extensions to be forced when gitpod starts
 
-[How To Check OS Version in Linux](
-https://www.cyberciti.biz/faq/how-to-check-os-version-in-linux-command-line/)
+> 1.8.0
+ - added http server
+ - uptdated assets path variable
+ - updated assets to be uploaded with for_each
+ - added new image resources
 
-Example of checking OS Version:
+> 1.7.0
+ - added outputs for cloudfront_url
+ - added invalidator trigger
+ - expose cloudfront_url domain
 
+> 1.6.0
+ - added content version to terrahouse_aws
+ - added trigger to replace terrahouse_aws
+ - added public directory for resources (html, images, etc)
+
+> 1.5.2
+ - added outputs from scripts
+
+> 1.5.1
+ - moved CP tfvars example to be copied from a script
+
+> 1.5.0
+ - using of aws_caller_identity
+ - added cloudfront distribution
+ - added s3 bucket_policy
+
+> 1.4.0
+ - added path for files into variables
+ - added bucket configuration
+ - added endpoint outputs
+
+> 1.3.0
+ - added terrahouse_aws module
+ - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket
+ - https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html?icmpid=docs_amazons3_console
+
+> 1.2.0
+ - updated bucket name as resource from example to website_bucket
+ - updated outputs that were default to bucket_name 
+ - removed random provider
+ - added bucket name and bucket name validator for this variable
+
+
+> 1.1.0
+ - added piece of code to copy tfvars.example into tfvars
+
+> 0.9.0
+ - added bin/set_tf_alias script to set alias for tf usage
+ - changed .gitpod.yml to run bin/set_tf_alias script file
+
+> 0.8.0
+ - updated token for using into cloud state saver
+
+> 0.7.0
+ - added cloud backend for terraform state keeper
+
+> 0.6.0
+ - added aws_s3_bucket resource to be created
+
+> 0.4.0 + 0.5.0
+1. Updated .gitpod.yml file in order to install terraform properly
+2. Updated .terraform.lock.hcl file after apply and destroy steps
+3. Added main.tf file
+   - configured terraform block
+   - configured random provider
+   - added **resource** random_string 
+   - added output form random string which will be bucket name
+
+> 0.3.0
+1. Added / updated bin/install_terraform_cli file
+
+> 0.2.0
+1.  Added / updated bin/install_terraform_cli script file
+
+> 0.1.0
+1. Added readme.md file
+
+
+## Useful Links
+[AboutInstall TF Cli](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
+
+[About Check OS Version](https://www.cyberciti.biz/faq/how-to-check-os-version-in-linux-command-line/)
+
+[About What Shebang](https://en.wikipedia.org/wiki/Shebang_(Unix))
+
+[About Chmod Wiki](https://en.wikipedia.org/wiki/Chmod)
+
+[About Gitpod tasks](https://www.gitpod.io/docs/configure/workspaces/tasks)
+
+[About AWS Cli](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+
+[About AWS Cli ENV](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html)
+
+[About Random TF Provider](https://registry.terraform.io/providers/hashicorp/random)
+
+[About Git tags](https://devconnected.com/how-to-delete-local-and-remote-tags-on-git/)
+
+[About Standard Structured Module](https://developer.hashicorp.com/terraform/language/modules/develop/structure)
+
+[About TF Input vars](https://developer.hashicorp.com/terraform/language/values/variables)
+
+[About TF Import](https://developer.hashicorp.com/terraform/cli/import)
+
+[About AWS S3 bucket import](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket#import)
+
+[About Function fileexists](https://developer.hashicorp.com/terraform/language/functions/fileexists)
+
+[About Local Values](https://developer.hashicorp.com/terraform/language/values/locals)
+
+[About Data Sources](https://developer.hashicorp.com/terraform/language/data-sources)
+
+[About JSONENCODE](https://developer.hashicorp.com/terraform/language/functions/jsonencode)
+
+[About Args Lifecycle](https://developer.hashicorp.com/terraform/language/meta-arguments/lifecycle)
+
+[About Provisioners](https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax)
+
+[About TF Foreach](https://developer.hashicorp.com/terraform/language/expressions/for)
+
+[About Sinatra](https://sinatrarb.com/)
+
+[About CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)
+
+## Code snippets
+
+### OS Check
 ```
 $ cat /etc/os-release
+
 PRETTY_NAME="Ubuntu 22.04.3 LTS"
 NAME="Ubuntu"
 VERSION_ID="22.04"
@@ -50,110 +186,105 @@ PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-poli
 UBUNTU_CODENAME=jammy
 ```
 
-==================================================
-### Refactoring into Bash Scripts
-==================================================
-While fixing the Terraform CLI gpg depreciation issues we notice that bash scripts steps were a considerable amount more code. So we decided to create a bash script to install the Terraform CLI.
-
-This bash script is located here: [./bin/install_terraform_cli](./bin/install_terraform_cli)
-
-- This will keep the Gitpod Task File ([.gitpod.yml](.gitpod.yml)) tidy.
-- This allow us an easier to debug and execute manually Terraform CLI install
-- This will allow better portablity for other projects that need to install Terraform CLI.
-
-==================================================
-#### Shebang Considerations
-==================================================
-
-A Shebang (prounced Sha-bang) tells the bash script what program that will interpet the script. eg. `#!/bin/bash`
-
-ChatGPT recommended this format for bash: `#!/usr/bin/env bash`
-
-- for portability for different OS distributions 
--  will search the user's PATH for the bash executable
-
-https://en.wikipedia.org/wiki/Shebang_(Unix)
-
-==================================================
-#### Execution Considerations
-==================================================
-
-When executing the bash script we can use the `./` shorthand notiation to execute the bash script.
-
-eg. `./bin/install_terraform_cli`
-
-If we are using a script in .gitpod.yml  we need to point the script to a program to interpert it.
-
-eg. `source ./bin/install_terraform_cli`
-
-==================================================
-#### Linux Permissions Considerations
-==================================================
-
-In order to make our bash scripts executable we need to change linux permission for the fix to be exetuable at the user mode.
-
-```sh
-chmod u+x ./bin/install_terraform_cli
+### Delete local tag (git)
+```
+git tag -d <tag_name>
 ```
 
-alternatively:
-
-```sh
-chmod 744 ./bin/install_terraform_cli
+### Delete origin tag (git)
+```
+git push --delete origin tagname
 ```
 
-https://en.wikipedia.org/wiki/Chmod
-==================================================
-### Github Lifecycle (Before, Init, Command)
-==================================================
-
-We need to be careful when using the Init because it will not rerun if we restart an existing workspace.
-
-https://www.gitpod.io/docs/configure/workspaces/tasks
-
-
-==================================================
-### Adding terraform provider
-==================================================
-```terraform
-    aws = {
-      source = "hashicorp/aws"
-      version = "5.16.2"
-    }
+### Project root
+```
+PROJECT_ROOT
+│
+├── main.tf                 # everything else.
+├── variables.tf            # stores the structure of input variables
+├── terraform.tfvars        # the data of variables we want to load into our terraform project
+├── providers.tf            # defined required providers and their configuration
+├── outputs.tf              # stores our outputs
+└── README.md               # required for root modules
 ```
 
-==================================================
-### Configuring terraform provider
-==================================================
-```terraform
-provider "aws" {
+### Terrraform Refresh
+```
+terraform apply -refresh-only -auto-approve
+```
 
+### Module example
+```
+module "terrahouse_aws" {
+  source = "./modules/terrahouse_aws"
 }
 ```
 
-==================================================
-### Create S3 Bucket resource in terraform
-==================================================
+### Data sources
+
 ```
-resource "aws_s3_bucket" "terraform_course_bucket" {
-  bucket = random_string.bucket_name.result
+data "aws_caller_identity" "current" {}
+
+output "account_id" {
+  value = data.aws_caller_identity.current.account_id
 }
 ```
 
-==================================================
-### Add terraform cloud in terraform block
-==================================================
+### JSONEncode
 ```
-  cloud {
-    organization = "Your organization"
+> jsonencode({"hello"="world"})
+{"hello":"world"}
+```
 
-    workspaces {
-      name = "your-workspace"
-    }
+### Local exec
+```
+resource "aws_instance" "web" {
+  # ...
+
+  provisioner "local-exec" {
+    command = "echo The server's IP address is ${self.private_ip}"
   }
+}
 ```
 
-==================================================
-### Set your TERRAFORM_CLOUD_TOKEN
-==================================================
-`gp env TERRAFORM_CLOUD_TOKEN='your-token-here'`
+### Remote exec
+```
+resource "aws_instance" "web" {
+  # ...
+
+  # Establishes connection to be used by all
+  # generic remote provisioners (i.e. file/remote-exec)
+  connection {
+    type     = "ssh"
+    user     = "root"
+    password = var.root_password
+    host     = self.public_ip
+  }
+
+  provisioner "remote-exec" {
+    inline = [
+      "puppet apply",
+      "consul join ${aws_instance.web.private_ip}",
+    ]
+  }
+}
+```
+
+```tf
+[for s in var.list : upper(s)]
+```
+
+```ruby
+bundle install
+bundle exec ruby server.rb
+```
+
+```ruby
+source "https://rubygems.org"
+
+gem 'sinatra'
+gem 'rake'
+gem 'pry'
+gem 'puma'
+gem 'activerecord'
+```
